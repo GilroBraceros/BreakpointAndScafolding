@@ -1,0 +1,5 @@
+gilro|braceros|Male|2005-04-04|0961234567|gilrobraceros3@gmail.com|Recto St.|Manila|Manila|1234|PHILIPPINES|Gilro|1234
+gilro|braceros|Male|2004-04-04|0961234567|gilrobraceros3@gmail.com|Recto St.|Manila|Manila|1234|PHILIPPINES|Gilro|1234
+Lebron|James|Male|2005-04-04|0961234567|lebronjames3@gmail.com|GGG ST.|Manila|Manila|1234|PHILIPPINES|Lebron|555
+Jordan|braceros|Male|2005-04-04|09123456789|lebronjames3@gmail.com|Recto St.|Manila|Manila|1234|PHILIPPINES|gilro|Wow#123456789
+James|Harden|Male|1999-04-04|09123456789|harden@gmail.com|Recto St.|Manila|Manila|1234|Philippines|James|Harden#12345678
