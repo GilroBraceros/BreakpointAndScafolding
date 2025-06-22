@@ -1,46 +1,145 @@
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Agency - Start Bootstrap Theme</title>
-        <!-- Favicon-->
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+  }
+
+  .masthead {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                url('https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1500&q=80') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f8f9fa;
+  }
+
+  .masthead .container {
+    max-width: 800px;
+  }
+
+  .masthead-subheading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #f0c420;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+
+  .masthead-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+
+  .btn-xl {
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    background-color: #f0c420;
+    color: #000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .btn-xl:hover {
+    background-color: #ffdd44;
+    transform: scale(1.05);
+  }
+
+  .navbar-brand {
+    font-weight: 700;
+    color: gold !important;
+    font-size: 1.8rem;
+  }
+
+  .navbar-brand:hover {
+    color: #f0c420 !important;
+  }
+
+  
+    footer {
+      background-color: #000;
+      font-size: 0.9rem;
+      color: white;
+      padding: 1rem 0;
+      margin-top: auto;
+    }
+
+        .btn-xl {
+      padding: 15px 35px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-xl:hover {
+      background-color: #ffc107;
+      transform: scale(1.05);
+    }
+
+
+</style>
+
+
+
+  </style>
+        <title>Braceros' Mechandise</title>
+
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
+
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
+
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+ 
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.php">Log-in</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
 
-        <header class="masthead">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: Black;" id="mainNav">
             <div class="container">
-                <div class="masthead-subheading" style="color: azure;" >Welcome To My Website!</div>
-                <div class="masthead-heading text-uppercase" style="color: azure;">BRACEROS MERCHANDISE</div>
-                <a class="btn btn-info btn-xl text-uppercase" href="#services">Tell Me More</a>
+            <a class="navbar-brand" href="#">Braceros' Merchandise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.php">Log-in</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+            <header class="masthead text-center text-white d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To My Website!</div>
+                <div class="masthead-heading text-uppercase" style="color:#f0c420">Braceros' Merchandise</div>
+                <a class="btn btn-warning btn-xl text-uppercase mt-4 shadow" href="#services">Tell Me More</a>
             </div>
-        </header>
+            </header>
+
 
         <section class="page-section" id="services">
             <div class="container">
@@ -153,22 +252,22 @@
                   
         </section>
 
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Gilro R. Braceros 2023</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+<footer class="footer py-4 mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4 text-lg-start">© Gilro R. Braceros 2023</div>
+      <div class="col-lg-4 my-3 my-lg-0 text-center">
+        <a class="btn btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <a class="link-light text-decoration-none me-3" href="#!">Privacy Policy</a>
+        <a class="link-light text-decoration-none" href="#!">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
     
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">

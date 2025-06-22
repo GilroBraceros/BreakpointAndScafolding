@@ -103,101 +103,162 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #caf0f8, #ffffff);
-      margin: 0;
-      padding-top: 90px;
-    }
-    .navbar {
-      background-color: #003366;
-    }
-    .navbar-brand {
-      color: gold !important;
-      font-size: 1.8rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-    .navbar-brand:hover {
-      color: #ffd700 !important;
-    }
-    .register-form {
-      max-width: 850px;
-      margin: 40px auto;
-      padding: 40px;
-      background: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-      border-top: 6px solid #00b4d8;
-    }
-    h2 {
-      font-weight: 600;
-      color: #0077b6;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    h5 {
-      border-left: 4px solid #00b4d8;
-      padding-left: 10px;
-      margin-top: 25px;
-      font-weight: 500;
-      color: #495057;
-    }
-    .form-label {
-      font-weight: 500;
-      color: #343a40;
-    }
-    .btn-primary {
-      background-color: #00b4d8;
-      border: none;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-    .btn-primary:hover {
-      background-color: #0077b6;
-      transform: scale(1.02);
-    }
-    .btn-reset {
-      background-color: #6c757d;
-      border: none;
-      color: white;
-      font-weight: 600;
-      padding: 0.5rem 1rem;
-      border-radius: 0.375rem;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-    .btn-reset:hover {
-      background-color: #5a6268;
-      transform: scale(1.02);
-      color: white;
-      text-decoration: none;
-    }
-    .form-actions {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 1.5rem;
-    }
-    .text-center a {
-      text-decoration: none;
-      color: #00b4d8;
-    }
-    .text-center a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      background-color: #f8f9fa;
-      font-size: 0.9rem;
-      margin-top: 60px;
-    }
-    .btn-social i {
-      font-size: 1.2rem;
-    }
+   body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #fdfdfd, #b0c4de); 
+  color: #000;
+  padding-top: 100px;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #000;
+}
+
+.navbar-brand {
+  color: gold !important;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.navbar-brand:hover {
+  color: #ffd700 !important;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: gold !important;
+}
+
+.register-form {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 40px;
+  background: #111;
+  border-radius: 16px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-top: 6px solid gold;
+}
+
+h2 {
+  font-weight: 700;
+  color: gold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h5 {
+  border-left: 4px solid gold;
+  padding-left: 10px;
+  margin-top: 25px;
+  font-weight: 600;
+  color: white;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #f8f9fa;
+}
+
+.form-control {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.form-control:focus {
+  border-color: gold;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: gold;
+  color: black;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffcc00;
+  transform: scale(1.03);
+}
+
+.btn-reset {
+  background-color: #6c757d;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-reset:hover {
+  background-color: #5a6268;
+  transform: scale(1.02);
+  color: white;
+  text-decoration: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.text-center a {
+  text-decoration: none;
+  color: #00b4d8;
+}
+
+.text-center a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #000;
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 60px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.btn-social i {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.btn-social:hover i {
+  color: gold;
+}
+
+
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand" href="#">Braceros' Merchandise</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars ms-1"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.php">Log-in</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 
@@ -295,19 +356,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 
     <div class="form-actions">
-      <button type="submit" class="btn btn-primary">Register</button>
       <button type="button" class="btn-reset" onclick="clearForm()">Reset</button>
+      <button type="submit" class="btn btn-primary">Register</button>
 
     </div>
   </form>
 
   <div class="text-center mt-3">
-    <p>Already have an account? <a href="login.php">Login here</a></p>
+    <p style="color:azure">Already have an account? <a href="login.php">Login here</a></p>
   </div>
 </div>
 
-<footer class="text-center py-3">
-  &copy; 2023 Braceros' Merchandise. All rights reserved.
+<footer class="footer py-4 mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4 text-lg-start">© Gilro R. Braceros 2023</div>
+      <div class="col-lg-4 my-3 my-lg-0 text-center">
+        <a class="btn btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <a class="link-light text-decoration-none me-3" href="#!">Privacy Policy</a>
+        <a class="link-light text-decoration-none" href="#!">Terms of Use</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
